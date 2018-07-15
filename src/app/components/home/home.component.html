@@ -1,0 +1,20 @@
+<app-loading *ngIf="loading"></app-loading>
+
+<div *ngIf="error" class="alert alert-danger animated fadeIn m-5">
+  <h3>Error</h3>
+  <p>{{this.mensajeErr}}</p>
+
+</div>
+
+<app-cards [items]=nuevasCanciones></app-cards>
+<!--<div class="bricklayer">
+  <div class="card-columns m-5" >
+
+      <div class="card" *ngFor="let cancion of nuevasCanciones" >
+          <img class="card-img-top" [src]="cancion.images[0].url" alt="Card image cap">
+          <div class="card-body">
+              <h5 class="card-title">{{cancion.name}}</h5>
+              <p class="card-text"><span class="badge badge-info" *ngFor="let artista of cancion.artists">{{artista.name}}</span></p>
+  </div>
+
+</div>-->

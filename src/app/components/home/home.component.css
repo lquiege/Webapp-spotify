@@ -1,0 +1,29 @@
+@media screen and (min-width: 500px) {
+    .bricklayer-column-sizer {
+        /* divide by 2. */
+        width: calc(100% / 2 - 20px);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .bricklayer-column-sizer {
+        /* divide by 3. */
+        width: calc(100% / 3 - 20px);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .bricklayer-column-sizer {
+        /* divide by 4. */
+        width: calc(100% / 4 - 20px);
+    }
+}
+
+.bricklayer-column-sizer {
+    margin: 5px;
+}
+
+.bricklayer {
+    justify-content: center;
+
+}
